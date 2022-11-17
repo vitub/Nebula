@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Nebula",
+    "version": "1.1",
+
+    "description": "A comfy homepage for your browser",
+
+    "permissions": [
+      "search" 
+    ],
+    
+    
+    "chrome_settings_overrides": {
+        "homepage": "index.html"
+      },
+      "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    
+
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["script.js"]
+          
+        }
+      ]
+
+
+    }
